@@ -1,0 +1,10 @@
+<table ng-show="show">
+
+</table>
+<button ng-click="show=!show">{{ submit }}</button>
+
+
+app.controller('MainCtrl', function($scope) {
+  $scope.show = false; // Hide it initially
+
+});

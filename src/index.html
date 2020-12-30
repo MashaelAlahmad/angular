@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #table{
+      visibility: hidden;
+      margin: 0px;
+      padding: 0px;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .center {
+      margin: auto;
+      padding-left: 30px;
+      padding-top: 50px;
+      width: 60%;
+    }
+    nav {
+      float: left;
+      width: 20%;
+      height: 70%;
+      background: #F6E3CE;
+      padding: 100px;
+      margin-right: 20px;
+      position: fixed;
+    }
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #ADD8E6;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    /* Style the footer */
+    footer {
+      padding: 10px;
+      text-align: left;
+      color: lightskyblue;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h2>Welcame To The Application</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">taturials</a></li>
+      <li><a href="#">downloads</a></li>
+      <li><a href="#">get help</a></li>
+    </ul>
+  </nav>
+</section>
+<br>
+<div class="center">
+  <script>
+    function myFunction() {
+      document.getElementById("table").style.display = "block";
+      document.getElementById("table").style.visibility="show"
+    }
+  </script>
+<form>
+  <label for="fname">User Name:</label><br>
+  <input type="text" id="fname" name="fname">
+  <br><br>
+  <label for="Apps">Application name</label>
+  <br>
+  <select name="Apps" id="Apps">
+    <option value="Angular">Angular</option>
+    <option value="Ionic">Ionic</option>
+    <option value="Visual">Visual</option>
+    <option value="Marvel">Marvel</option>
+  </select>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">
+</form>
+<br>
+<div id="table" class="center">
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Angular</td>
+    <td>Maria Anders</td>
+  </tr>
+  <tr>
+    <td>Ionic</td>
+    <td>Francisco Chang</td>
+  </tr>
+  <tr>
+    <td>Marvel</td>
+    <td>Roland Mendel</td>
+  </tr>
+  <tr>
+    <td>visual</td>
+    <td>Helen Bennett</td>
+  </tr>
+  <tr>
+    <td>java script</td>
+    <td>Yoshi Tannamuri</td>
+  </tr>
+  <tr>
+    <td>python</td>
+    <td>Giovanni Rovelli</td>
+  </tr>
+</table>
+</div>
+
+<footer>
+  <p>Angular Sample</p>
+</footer>
+</div>
+</body>
+</html>
